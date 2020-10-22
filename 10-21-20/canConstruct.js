@@ -6,7 +6,7 @@ const canConstruct = (target, subs) => {
   for (const prefix of subs) {
     if (target.indexOf(prefix) === 0) {
       if (canConstruct(target.slice(prefix.length), subs) === true) {
-        return true
+        return true;
       }
     }
   }
