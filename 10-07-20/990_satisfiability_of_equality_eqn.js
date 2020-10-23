@@ -28,13 +28,13 @@
 
 // O(n) time and O(m) space
 const constructGraph = equations => {
-  const graph = {};                       // O(m) space
+  const graph = {};                                                 // O(m) space
   
-  equations.forEach(equation => {         // O(n) time
+  equations.forEach(equation => {                                   // O(n) time
     const vertex1 = equation[0];   
     const vertex2 = equation[3];         
 
-    if (equation.slice(1,3) === "==") {   // O(1) time (always length of 4)
+    if (equation.slice(1,3) === "==") {                             // O(1) time (always length of 4)
       vertex1 in graph ? graph[vertex1].push(vertex2) : graph[vertex1] = [ vertex2 ];
       vertex2 in graph ? graph[vertex2].push(vertex1) : graph[vertex2] = [ vertex1 ];
     } else {
@@ -83,5 +83,5 @@ const equationsPossible = equations => {
   return true;
 }
 
-// O(m*n) => O(n) if vertices are only alphabetical characers
+// O(m*n) => O(n) if vertices are only alphabetical characters
 // O(m) space => array of varying size even if number of vertices are constant
