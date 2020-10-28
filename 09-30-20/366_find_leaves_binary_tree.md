@@ -3,7 +3,8 @@
 ##### <a href="https://leetcode.com/problems/find-leaves-of-binary-tree/" target="_blank">Find Leaves of Binary Tree</a>
 
 ```
-Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
+Given a binary tree, collect a tree's nodes as if you were doing this: 
+Collect and remove all leaves, repeat until the tree is empty.
 
 Example 1:
 Input: [1,2,3,4,5]
