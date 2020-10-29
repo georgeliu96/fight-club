@@ -14,7 +14,7 @@ using namespace std;
 
 int gridTraveler(int m, int n, map<pair<int, int>, int>* memo) {
   pair<int, int> key = make_pair(m, n);
-  
+
   if (memo->count(key) == 1)
     return memo->at(key);
 
@@ -39,4 +39,5 @@ int main() {
   cout << gridTraveler(3, 2) << endl; // 3
   cout << gridTraveler(3, 3) << endl; // 6
   cout << gridTraveler(20, 20) << endl; // 985525432
+  return 0;
 }

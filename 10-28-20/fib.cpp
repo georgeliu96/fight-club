@@ -30,4 +30,5 @@ int main() {
   cout << fib(7) << endl; // 13
   cout << fib(8) << endl; // 21
   cout << fib(45) << endl; // 1134903170
+  return 0;
 }
