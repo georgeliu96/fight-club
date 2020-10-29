@@ -7,7 +7,7 @@ def fib(n, memo={})
   return memo[n] if memo.has_key?(n)
   return 1 if n == 1 || n == 2
   memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
-  return memo[n]
+  memo[n]
 end
 
 p fib(6) # 8
