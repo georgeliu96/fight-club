@@ -16,7 +16,8 @@ func gridTravelerHelper(_ m: Int, _ n: Int, _ memo: inout [String: Int]) -> Int 
   let numWaysGoingDown = gridTravelerHelper(m - 1,n, &memo)
   let numWaysGoingRight = gridTravelerHelper(m, n - 1, &memo)
   memo[key] = numWaysGoingDown + numWaysGoingRight
-  return memo[key]! // Force unwrap this value. The value at memo[key] *could* be nil so we use `!` to denote that we're sure there's a value. 
+  // The value at memo[key] *could* be nil so we use `!` to denote that we're sure there's a value.
+  return memo[key]!
 }
 
 func gridTraveler(row: Int, column: Int) -> Int {
