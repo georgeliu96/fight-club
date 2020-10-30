@@ -4,11 +4,11 @@ func fib(n: Int) -> Int {
 }
 
 func _fib(n: Int, memo: inout Dictionary<Int, Int>) -> Int {
-  guard memo[n] == nil else { return memo[n] ?? -1 }
+  guard memo[n] == nil else { return memo[n]! }
   guard n > 2 else { return 1 }
 
   memo[n] = _fib(n: n - 1, memo: &memo) + _fib(n: n - 2, memo: &memo)
-  return memo[n] ?? -1
+  return memo[n]!
 }
 
 print(fib(n: 6)) // 8
