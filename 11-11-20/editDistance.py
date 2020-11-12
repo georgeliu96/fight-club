@@ -36,3 +36,14 @@ class Solution:
 word1 = "horse"
 word2 = "ros"
 print(minDistance(word1, word2)) # 3
+
+
+
+
+def sumArray(arr, i = 0):
+  if i == len(arr):
+    return 0
+
+  return arr[i] + sumArray(arr, i + 1)
+
+print(sumArray([3, 7, 10])) # 20
