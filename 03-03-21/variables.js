@@ -49,3 +49,20 @@
 // console.log(myNum);
 // let myNum = 42;
 // console.log(myNum);
+
+
+// potential use case for var
+// if (true) {
+//     var potato = 'a carbohydrate';
+// }
+
+// console.log(potato);
+
+
+// but can be written with let 
+// let potato;
+// if (false) {
+//      potato = 'a carbohydrate';
+// }
+
+// console.log(potato);
